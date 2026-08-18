@@ -4,11 +4,11 @@ const projects = [
   {
     number: "01",
     type: "Embedded measurement system",
-    title: "K-Sense panel meter",
+    title: "Digital Plumb Meter",
     description:
       "A production-oriented ESP32 device for plumb, level, and rotation measurement on construction panels, with a Nextion HMI and field-ready configuration flow.",
     result: "Modular firmware with calibration, battery health, Wi-Fi provisioning, MQTT telemetry, and local logging.",
-    tags: ["ESP32", "SCL3300", "Nextion", "MQTT"],
+    tags: ["ESP32", "Inclinometers", "Nextion", "MQTT"],
   },
   {
     number: "02",
@@ -26,7 +26,7 @@ const projects = [
     description:
       "Reverse engineering and prototyping of a multi-channel photodiode receiver for laser position detection, including analog front-end analysis and ESP32 acquisition.",
     result: "Coherent sampling, multiplexed ADC scanning, calibration, noise gating, confidence scoring, and position estimation.",
-    tags: ["Photodiode", "OPA2380", "ADC", "Signal processing"],
+    tags: ["Photodiode", "OP Amps", "ADC", "Signal processing"],
   },
   {
     number: "04",
@@ -35,7 +35,7 @@ const projects = [
     description:
       "Device engineering and deployment support for environmental monitoring systems, spanning sensor integration, connectivity, data transfer, and QA.",
     result: "Supported deployments across 50+ rural locations with improved connectivity diagnostics and device reliability.",
-    tags: ["Sensors", "HTTP", "CoAP", "Field QA"],
+    tags: ["Sensors", "HTTP", "HTTPS", "EC200 UN"],
   },
 ];
 

@@ -39,7 +39,7 @@ export const cv = {
     { title: "M.Sc. Electronics from Fergusson College", detail: "Electronics and embedded systems foundation" },
   ],
   skills: [
-    "C / C++", "ESP32", "Raspberry Pi", "Python", "MQTT / MQTTS", "PostgreSQL", "STM32",
+    "C / C++", "ESP32", "Raspberry Pi", "Python", "MQTT / MQTTS", "PostgreSQL", "STM32", "HTTP / HTTPS",
     "Flask", "Node-RED", "Modbus RTU / TCP", "I2C", "SPI", "UART", "Linux", "Docker", "AWS EC2",
   ],
 };
