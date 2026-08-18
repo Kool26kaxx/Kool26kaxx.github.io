@@ -1,5 +1,10 @@
 import { cv } from "./cv";
 
+const profileLinks = {
+  github: "https://github.com/Kool26kaxx",
+  linkedin: "https://www.linkedin.com/in/akash-kulkarni-0b936a166",
+};
+
 const projects = [
   {
     number: "01",
@@ -174,10 +179,27 @@ export default function Home() {
           <p>If the work sits somewhere between hardware, firmware, and a reliable view of what is happening, I&apos;d like to hear about it.</p>
         </div>
         <div className="contact-card">
-          <span className="contact-label">Best next step</span>
-          <a className="contact-email" href="https://github.com/Kool26kaxx" target="_blank" rel="noreferrer">Open my GitHub profile <span aria-hidden="true">↗</span></a>
-          <div className="contact-links"><a href="https://github.com/Kool26kaxx" target="_blank" rel="noreferrer">GitHub / KoolKaxx</a><span>Contact details on request</span></div>
-        </div>
+  <span className="contact-label">Best next step</span>
+
+  <a
+    className="contact-email"
+    href={profileLinks.linkedin}
+    target="_blank"
+    rel="noreferrer"
+  >
+    Open my LinkedIn profile <span aria-hidden="true">↗</span>
+  </a>
+
+  <div className="contact-links">
+    <a href={profileLinks.linkedin} target="_blank" rel="noreferrer">
+      LinkedIn / Akash Kulkarni
+    </a>
+
+    <a href={profileLinks.github} target="_blank" rel="noreferrer">
+      GitHub / Kool26kaxx
+    </a>
+  </div>
+</div>
       </section>
 
       <footer className="site-footer section-shell"><span>© 2026 Akash Kulkarni</span><span>Designed around the work.</span><a href="#top">Back to top ↑</a></footer>
