@@ -97,3 +97,100 @@ em { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
 .site-footer { display: flex; justify-content: space-between; gap: 20px; padding-top: 24px; padding-bottom: 26px; color: var(--muted); font: 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; border-top: 1px solid var(--line); }
 @media (max-width: 800px) { .section-shell, .site-header { width: min(100% - 36px, 620px); } .site-header { min-height: 70px; } .nav { display: none; } .hero, .capabilities, .cv, .about, .contact { grid-template-columns: 1fr; gap: 52px; } .hero { padding-top: 76px; padding-bottom: 105px; } .hero-console { justify-self: start; max-width: 420px; box-shadow: 10px 10px 0 var(--sage); } .hero-meta { margin-top: 45px; } .project-grid { grid-template-columns: 1fr; } .project-card { min-height: 350px; } .section-lead { margin-left: 0; } .capabilities, .cv, .about, .contact { padding: 85px 0 105px; } .about-note { flex-direction: row; justify-content: space-between; } .contact-card { box-shadow: 10px 10px 0 var(--accent); } .site-footer { flex-wrap: wrap; } }
 @media (max-width: 460px) { h1 { font-size: 49px; } h2 { font-size: 43px; } .header-contact { font-size: 11px; } .hero-actions { align-items: flex-start; flex-direction: column; gap: 20px; } .hero-meta { flex-direction: column; gap: 12px; } .hero-meta span + span { border: 0; padding: 0; } .capability-row { grid-template-columns: 32px 1fr; gap: 12px; } .capability-row p { grid-column: 2; } .about-facts { flex-direction: column; gap: 18px; } }
+/* Mobile layout improvements */
+html,
+body {
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .cv-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .cv-aside {
+    padding-top: 0;
+  }
+
+  .experience-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+  }
+
+  .experience-item h3 {
+    font-size: 22px;
+  }
+
+  .contact-email {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 460px) {
+  .section-shell,
+  .site-header {
+    width: calc(100% - 28px);
+  }
+
+  .site-header {
+    gap: 12px;
+  }
+
+  .brand {
+    flex-shrink: 0;
+  }
+
+  .header-contact {
+    text-align: right;
+    font-size: 10px;
+  }
+
+  .hero-console {
+    width: 100%;
+    box-shadow: 8px 8px 0 var(--sage);
+  }
+
+  .console-body {
+    padding: 22px 18px;
+  }
+
+  .project-card {
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .project-card h3 {
+    font-size: 28px;
+  }
+
+  .project-result {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .about-facts {
+    gap: 22px;
+  }
+
+  .contact-card {
+    padding: 24px;
+  }
+
+  .contact-email {
+    font-size: 17px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
